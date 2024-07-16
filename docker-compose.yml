@@ -41,7 +41,7 @@ services:
   control-panel:
     build:
       context: ./etc/opensips-cp/image
-      dockerfile: Dockerfile
+      dockerfile_inline: FROM opensips/opensips-cp:latest
     container_name: opensips-cp
     env_file:
       - .env
@@ -54,7 +54,6 @@ services:
       - 9060/tcp
     volumes:
       - ./etc/opensips-cp/docker-entrypoint.d:/docker-entrypoint.d
-      - ../opensips-cp:/var/www/html/opensips-cp
     networks:
       local_network:
         ipv4_address: ${CP_IP}
