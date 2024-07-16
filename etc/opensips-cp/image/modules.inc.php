@@ -22,7 +22,7 @@
 
 
 ### List with all the available modules - you can enable and disable module from here
-### CHOOSE THE MODULES YOU WANT, DUDE!
+### Here you can choose which modules to be enabled/disabled in the OpenSIPS-CP interface
 
 $config_admin_modules = array (
 	"list_admins"	=> array (
@@ -80,6 +80,10 @@ $config_modules 	= array (
 				"enabled"		=> true,
 				"name"			=> "Addresses"
 			),
+			"callcenter"		=> array (
+				"enabled"		=> true,
+				"name"			=> "Callcenter"
+			),
 			"cdrviewer"			=> array (
 				"enabled"		=> true,
 				"name"			=> "CDR Viewer"
@@ -99,6 +103,10 @@ $config_modules 	= array (
 			"domains"			=> array (
 				"enabled"		=> true,
 				"name"			=> "Domains"
+			),
+			"drouting"			=> array (
+				"enabled"		=> true,
+				"name"			=> "Dynamic Routing"
 			),
 			"clusterer"			=> array (
 				"enabled"		=> true,
@@ -162,7 +170,7 @@ $config_modules 	= array (
             ),
 		)
 	),
-)
+);
 
 
 
