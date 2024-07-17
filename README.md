@@ -9,7 +9,7 @@ Clone the Repository and start the containers:
 ```bash
 git clone https://github.com/OpenSIPS/docker-opensips-cp-all-tools.git
 cd dockerized-opensips-env
-docker compose up -d
+docker compose up --build -d
 ```
 
 ## Access
