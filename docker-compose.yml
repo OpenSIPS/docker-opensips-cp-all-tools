@@ -75,6 +75,11 @@ services:
     container_name: rtpengine
     environment:
       - LOCAL_IP=${RTPENGINE_IP}
+    ulimits:
+      nproc: 1024
+      nofile:
+        soft: 4096
+        hard: 8192
     networks:
       local_network:
         ipv4_address: ${RTPENGINE_IP}
