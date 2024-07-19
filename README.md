@@ -1,4 +1,4 @@
-# Dockerized OpenSIPS Development Environment
+# Dockerized OpenSIPS Control Panel Development Environment
 
 This repository provides a **Docker environment** for developers to work with **OpenSIPS**, **OpenSIPS-CP** (with **all** its **tools**), a **MySQL** server, and both **RTPProxy** and **RTPengine**.
 
